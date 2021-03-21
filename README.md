@@ -17,7 +17,7 @@ Numeric value.
 
 ![The Password Generator functionality alert to "Generate Password" looks like this.](./Screenshots/PasswordGeneratorAlertMessage.JPG)
 
-## End result
+## End Result
 
 The end result will provide the user with a unique password meeting the criteria of the users selections.
 

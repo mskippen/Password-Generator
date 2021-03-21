@@ -21,7 +21,7 @@ function generatePassword() {
   }
   //check for lowercase
   var lowerCase = prompt(
-    "Do you want a lowercase character? Enter yes or no (case sensitive)."
+    "Do you want a lowercase character? Enter Yes or No (case sensitive)."
   );
 
   if (lowerCase === "" && lowerCase != "No") {

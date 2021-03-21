@@ -20,20 +20,20 @@ function generatePassword() {
     window.location.reload();
   }
   //check for lowercase
-  var lowerCase = prompt("Do you want a lowercase character, yes/no");
+  var lowerCase = prompt("Do you want a lowercase character? Enter yes or no");
 
-  if (lowerCase === "" && lowerCase != "no") {
+  if ((lowerCase === "" && lowerCase != "no", "No")) {
     lowerCase = false;
-  } else if (lowerCase == "yes") {
+  } else if ((lowerCase == "yes", "Yes")) {
     lowerCase = true;
   } else {
     lowerCase = "";
   }
   //check for uppercase
-  var upperCase = prompt("Do you want an UPPERCASE character, yes/no");
-  if (upperCase == "" && upperCase != "no") {
+  var upperCase = prompt("Do you want an UPPERCASE character? Enter yes or no");
+  if ((upperCase == "" && upperCase != "no", "No")) {
     upperCase = false;
-  } else if (upperCase == "yes") {
+  } else if ((upperCase == "yes", "Yes")) {
     upperCase = true;
   } else {
     upperCase = "";
@@ -42,17 +42,17 @@ function generatePassword() {
   var specialCharacters = prompt(
     "Do you want special characters, e.g #&*, yes/no"
   );
-  if (specialCharacters === "" && specialCharacters != "no") {
+  if ((specialCharacters === "" && specialCharacters != "no", "No")) {
     specialCharacters = false;
-  } else if (specialCharacters == "yes") {
+  } else if ((specialCharacters == "yes", "Yes")) {
     specialCharacters = true;
   } else {
     specialCharacters = "";
   }
   //check for numeric
-  var numeric = prompt("Do you want a Numeric character, e.g 1234, yes/no");
+  var numeric = prompt("Do you want a numeric character, e.g 1234? Enter yes or no");
 
-  if (numeric === "" || numeric == "no") {
+  if ((numeric === "" || numeric == "no", "No")) {
     prompt("You must enter a selection of yes if you said no to all others");
     numeric = true;
   } else {
@@ -110,7 +110,7 @@ function generatePassword() {
   }
 
   //check for conditionals to meet required criteria
-  if (lowerCase != false || lowerCase == "yes") {
+  if ((lowerCase != false || lowerCase == "yes", "Yes")) {
     getRandomLowerCase();
   } else {
     lowerCase = "";

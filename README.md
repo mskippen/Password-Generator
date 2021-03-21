@@ -31,4 +31,7 @@ HTML
 CSS
 JAVASCRIPT
 
+## Live URL
+https://mskippen.github.io/Password-Generator/.
+
 © 2021 Megan Skippen

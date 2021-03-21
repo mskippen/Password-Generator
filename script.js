@@ -20,40 +20,46 @@ function generatePassword() {
     window.location.reload();
   }
   //check for lowercase
-  var lowerCase = prompt("Do you want a lowercase character? Enter yes or no");
+  var lowerCase = prompt(
+    "Do you want a lowercase character? Enter yes or no (case sensitive)."
+  );
 
-  if ((lowerCase === "" && lowerCase != "no", "No")) {
+  if (lowerCase === "" && lowerCase != "No") {
     lowerCase = false;
-  } else if ((lowerCase == "yes", "Yes")) {
+  } else if (lowerCase == "Yes") {
     lowerCase = true;
   } else {
     lowerCase = "";
   }
   //check for uppercase
-  var upperCase = prompt("Do you want an UPPERCASE character? Enter yes or no");
-  if ((upperCase == "" && upperCase != "no", "No")) {
+  var upperCase = prompt(
+    "Do you want an UPPERCASE character? Enter Yes or No (case sensitive)."
+  );
+  if (upperCase == "" && upperCase != "No") {
     upperCase = false;
-  } else if ((upperCase == "yes", "Yes")) {
+  } else if (upperCase == "Yes") {
     upperCase = true;
   } else {
     upperCase = "";
   }
   //check for special characters
   var specialCharacters = prompt(
-    "Do you want special characters, e.g #&*, yes/no"
+    "Do you want special characters, e.g #&*? Enter Yes or No (case sensitive)."
   );
-  if ((specialCharacters === "" && specialCharacters != "no", "No")) {
+  if (specialCharacters === "" && specialCharacters != "No") {
     specialCharacters = false;
-  } else if ((specialCharacters == "yes", "Yes")) {
+  } else if (specialCharacters == "Yes") {
     specialCharacters = true;
   } else {
     specialCharacters = "";
   }
   //check for numeric
-  var numeric = prompt("Do you want a numeric character, e.g 1234? Enter yes or no");
+  var numeric = prompt(
+    "Do you want a numeric character, e.g 1234? Enter Yes or No (case sensitive)."
+  );
 
-  if ((numeric === "" || numeric == "no", "No")) {
-    prompt("You must enter a selection of yes if you said no to all others");
+  if (numeric === "" || numeric == "No") {
+    prompt("You must enter a selection of Yes if you said No to all others.");
     numeric = true;
   } else {
     numeric = true;
@@ -110,7 +116,7 @@ function generatePassword() {
   }
 
   //check for conditionals to meet required criteria
-  if ((lowerCase != false || lowerCase == "yes", "Yes")) {
+  if ((lowerCase != false || lowerCase == "Yes")) {
     getRandomLowerCase();
   } else {
     lowerCase = "";

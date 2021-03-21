@@ -8,10 +8,10 @@ A site that allows a user to generate a unique password with characters between 
 
 Users will be prompted to also include the following:
 
-Lowercase
-Uppercase
-Special Character
-Numeric value
+Lowercase,
+Uppercase,
+Special Character,
+Numeric value.
 
 ![The Password Generator functionality prompt to "Generate Password" looks like this.](./Screenshots/PasswordGeneratorPromptMessage.JPG)
 
@@ -27,9 +27,9 @@ The end result will provide the user with a unique password meeting the criteria
 
 Files have been setup as:
 
-HTML
-CSS
-JAVASCRIPT
+HTML,
+CSS,
+JAVASCRIPT.
 
 ## Live URL
 https://mskippen.github.io/Password-Generator/.
